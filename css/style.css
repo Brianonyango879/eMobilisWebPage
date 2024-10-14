@@ -1,0 +1,32 @@
+form{
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:snow;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="submit"],
+input[type="reset"],
+input[type="email"],
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+input[type="submit"]{
+    background-color:yellow ;
+}
+input[type="reset"]{
+     background-color:red ;
+}

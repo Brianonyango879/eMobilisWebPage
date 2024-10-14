@@ -1,13 +1,113 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>My first Website</title>
+    <meta charset="UTF-8">
+    <title>EMobilis</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <style>
+        button {
+            background-color: darkorange;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    #btnSubmit{
+            background-color: fuchsia;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+    }
+    .table{
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+        font-family: "Arial Black";
+    }
+    td{
+        padding: 12px;
+        text-align: center;
+        border: 1px solid grey;
+    }
+    </style>
 </head>
-<body>
-<h1> Brian Onyango Odhiambo</h1>
-<h2>Brian Onyango Odhiambo</h2>
-<h3>Brian Onyango Odhiambo</h3>
-<h4>Brian Onyango Odhiambo</h4>
-<h5>Brian Onyango Odhiambo</h5>
-<h6>Brian Onyango Odhiambo</h6>
+<body style="background-color: navy; color: white">
+<p style="font-family: 'Times New Roman'; font-weight: bold; color:brown">Lorem Ipsum is simply dummy text of the
+    printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries
+    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<ol>
+    <li>Afc Leopards</li>
+    <li>Gor Mahia</li>
+    <li>Sofa Paka</li>
+    <li>Tusker Fc</li>
+</ol>
+<UL>
+    <li>Afc Leopards</li>
+    <li>Gor Mahia</li>
+    <li>Sofa Paka</li>
+    <li>Tusker Fc</li>
+</UL>
+<h1>Heading 1</h1>
+<h6>Heading 2</h6>
+<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries
+    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</blockquote>
+<button>Click Me</button>
+<button id="btnSubmit">Submit Button</button>
+<img src="assets/P-IMG-20221119-WA0015.jpg" width="200" height="200" alt="Some Image here"/>
+<table class="table">
+    <thead>
+    <th>Position</th>
+    <th>Teams Name</th>
+    <th>Points</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Afc Leopards</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Sofapaka</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Gor Mahia</td>
+        <td>27</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="2">Total ticket Pricing</td>
+        <td>$5.98</td>
+    </tr>
+    </tfoot>
+</table>
+<form method="POST">
+    <Label>Team Name</Label>
+    <input type="text" placeholder="Enter Team Name" name="team_name"/>
+    <Label>Season Points</Label>
+    <input type="number" placeholder="Enter Points" name="team_points"/>
+    <Label>Team Email</Label>
+    <input type="email" placeholder="Enter Team Email" name="team_email"/>
+    <Label>Team Picture</Label>
+    <input type="file" name="team_pic"/>
+    <label>Home Team Color</label>
+    <select name="team_color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <input type="submit" value="Submit Team"/>
+    <input type="reset" value="Reset Form"/>
+</form>
 </body>
 </html>
